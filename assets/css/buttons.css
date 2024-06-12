@@ -52,3 +52,38 @@
     top: 50%;
     transform: rotate(-45deg);
 }
+
+
+/* Styling for primary button */
+.primary_button {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 15px 20px;
+    position: relative;
+    border-radius: .5rem;
+    border-width: 1px;
+    border-color: rgba(255, 87, 51, .3);
+    background-color: rgba(255, 87, 51, .1);
+    min-width: 160px;
+    font-size: 19px;
+    line-height: 1.75rem;
+    font-weight: 900;
+    filter: drop-shadow(0.35rem 0.35rem 0.8rem rgba(255, 87, 51, 0.5));
+}
+
+/* Create gradient effect for primary button */
+.primary_button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(8em circle at 50% 10px, var(--blood_red), transparent 30%);
+    opacity: .3;
+}
