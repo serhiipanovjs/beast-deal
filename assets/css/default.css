@@ -69,6 +69,10 @@ body:is([data-theme=dark] *) {
     }
 }
 
+dialog {
+    color: inherit;
+}
+
 button, a {
     all: unset;
     cursor: pointer;

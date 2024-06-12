@@ -1,0 +1,102 @@
+/*MODALS STYLES - START*/
+
+/* Styling for the modal wrapper */
+.modal_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Styling for the modal container */
+.modal_wrapper .modal_container {
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+/* Styling for the modal header */
+.modal_wrapper .modal_container .modal_header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+/* Styling for the modal content */
+.modal_wrapper .modal_container .modal_content {
+    height: 90%;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+/* Styling for the modal title */
+.modal_wrapper .modal_container .modal_content .modal_title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Media query for adjusting modal container on larger screens */
+@media only screen and (min-width: 35em) {
+    .modal_wrapper .modal_container {
+        width: 90%;
+        height: 90%;
+        max-width: 800px;
+        border-radius: 12px;
+        filter: drop-shadow(0.35rem 0.35rem 0.8rem rgba(255, 87, 51, 0.5));
+    }
+}
+
+/* Dark theme styling for the modal container */
+.modal_wrapper:is([data-theme=dark] *) .modal_container {
+    background-color: var(--black);
+}
+
+/* Styling for thank you modal content */
+.thank_you_modal_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for specific modal content */
+.rules_and_conditions_modal_content,
+.return_policy_modal_content,
+.thank_you_modal_content,
+.confirmDeal_modal_content {
+    padding-left: 1rem;
+}
+
+/* Styling for headings within modal content */
+.rules_and_conditions_modal_content h4,
+.return_policy_modal_content h4,
+.thank_you_modal_content h4,
+.confirmDeal_modal_content h4 {
+    text-align: center;
+}
+
+/* Styling for list items within modal content */
+.rules_and_conditions_modal_content li,
+.return_policy_modal_content li,
+.confirmDeal_modal_content li {
+    padding-bottom: 30px;
+}
+
+/* Styling for specific elements within modal content */
+.confirm_deal_modal_header span,
+.confirmDeal_modal_content span {
+    font-weight: bold;
+}
+
+/*MODALS STYLES - END*/
