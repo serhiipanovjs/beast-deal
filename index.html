@@ -88,7 +88,44 @@
 
     <!-- Main content section -->
     <div class="layouts_centeredLayout">
-        Content
+        <!-- Glowing backdrop element -->
+        <div class="glowingBackdrop"></div>
+        <!-- Main content layout for the home page -->
+        <main class="layouts_homeLayout">
+            <!-- Section for displaying home page information -->
+            <section class="home_information_section">
+                <!-- Tagline section -->
+                <div class="information_section_tagline">
+                    <!-- Conditional tagline based on dark mode -->
+                    <h1 class="block dark:hidden special">This is your best deal</h1>
+                    <h1 class="hidden dark:block special">This is your beast deal</h1>
+                    <!-- Description -->
+                    <p>Step into a world where every wish comes true. Sign the contract and unlock the gateway to your deepest
+                        desires fulfilled. But remember, every wish has its price...</p>
+                </div>
+                <!-- Link to sign the contract -->
+                <a href="./deal.html" role="button" aria-disabled="false" class="button_link">Sign the contract</a>
+            </section>
+            <!-- Section for displaying main images -->
+            <div class="home_main_image_section">
+                <!-- Container for executor avatars -->
+                <a href="./about.html" class="avatar_container">
+                    <!-- First set of executor avatars -->
+                    <img class="avatar_img first" src="assets/images/executors/lilith11.png" alt="Lilith avatar light">
+                    <img class="avatar_img second" src="assets/images/executors/beelzebub11.png" alt="Beelzebub avatar light">
+                    <img class="avatar_img third" src="assets/images/executors/mephistopheles11.png"
+                         alt="Mephistopheles avatar light">
+                    <img class="avatar_img fours" src="assets/images/executors/lucifer11.png" alt="Lucifer avatar light">
+                    <!-- Second set of executor avatars for dark mode -->
+                    <img class="avatar_img dark_img first" src="assets/images/executors/lilith12.png" alt="Lilith avatar dark">
+                    <img class="avatar_img dark_img second" src="assets/images/executors/beelzebub12.png"
+                         alt="Beelzebub avatar dark">
+                    <img class="avatar_img dark_img third" src="assets/images/executors/mephistopheles12.png"
+                         alt="Mephistopheles avatar dark">
+                    <img class="avatar_img dark_img fours" src="assets/images/executors/lucifer12.png" alt="Lucifer avatar dark">
+                </a>
+            </div>
+        </main>
     </div>
 
     <!-- Footer section -->
