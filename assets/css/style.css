@@ -4,5 +4,7 @@
 @import url("./buttons.css");
 /*HEADER STYLES*/
 @import url("./header.css");
-/*HEADER STYLES*/
+/*FOOTER STYLES*/
 @import url("./footer.css");
+/*MODALS STYLES*/
+@import url("./modals.css");
