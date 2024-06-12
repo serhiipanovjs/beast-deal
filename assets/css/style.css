@@ -1,0 +1,70 @@
+/*DEFAULT STYLES - START*/
+
+/* Define root variables for consistent color scheme */
+:root {
+    box-sizing: border-box;
+    --blue: #1e90ff;
+    --light_blue: rgb(179, 212, 252);
+    --light_gray: #ccc;
+    --white: rgb(255 255 255);
+    --black: rgb(13 18 28);
+    --background_light_gradient: linear-gradient(180deg, rgba(246, 247, 249, .5), rgba(246, 247, 249, 0) 48.32%);
+    --background_dark_gradient: linear-gradient(180deg, rgba(44, 52, 55, .5), rgba(44, 52, 55, 0) 48.32%);
+    --border_light: rgb(233 237 240);
+    --blood_red: rgb(255 87 51);
+}
+
+/* Apply default styles to HTML */
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* Apply default styles to body */
+body {
+    color: var(--black);
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    background-image: var(--background_light_gradient);
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+/* Apply dark theme styles */
+body:is([data-theme=dark] *) {
+    background-color: var(--black);
+    background-image: var(--background_dark_gradient);
+    color: var(--white);
+}
+
+/* Base layout styles */
+.layouts_baseLayout {
+    display: grid;
+    width: 100%;
+    min-height: 100%;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Centered layout styles */
+.layouts_centeredLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    padding: 2rem 1rem;
+}
+
+/* Adjust centered layout on larger screens */
+@media only screen and (min-width: 35em) {
+    .layouts_centeredLayout {
+        padding: 3.5rem 7rem;
+    }
+}
