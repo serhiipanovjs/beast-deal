@@ -1,0 +1,54 @@
+/* Styling for burger button icon */
+.burger_button {
+    display: block;
+    width: 20px;
+    height: 12px;
+    background: none;
+    position: relative;
+    padding: 0;
+    transition: 200ms;
+}
+
+/* Styling for lines in burger button icon */
+.burger_button .menu_line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid;
+    border-color: var(--black);
+    transition: 200ms, border-color 0ms;
+    display: block;
+}
+
+/* Adjust line color for dark theme */
+.burger_button .menu_line:is([data-theme=dark] *) {
+    border-color: var(--white);
+}
+
+/* Position lines in burger button icon */
+.burger_button .menu_line:nth-child(1) {
+    top: 0;
+}
+
+.burger_button .menu_line:nth-child(2) {
+    top: 50%;
+}
+
+.burger_button .menu_line:nth-child(3) {
+    top: 100%;
+}
+
+/* Animate menu lines for closed menu */
+.menu_closed .menu_line:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.menu_closed .menu_line:nth-child(2) {
+    display: none;
+}
+
+.menu_closed .menu_line:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
