@@ -87,3 +87,30 @@
     background-image: radial-gradient(8em circle at 50% 10px, var(--blood_red), transparent 30%);
     opacity: .3;
 }
+
+/* Styling for secondary button */
+.secondary_button {
+    color: inherit;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgba(255, 87, 51, 0.5);
+    border-radius: 50px;
+    transition: background-color 100ms;
+}
+
+/* Hover effect for the action secondary button */
+@media (hover: hover) {
+    .secondary_button:hover {
+        background-color: var(--light_blue);
+        color: var(--black);
+    }
+}
+
+/* Styling for the active state of the action secondary button */
+.secondary_button:active {
+    background-color: var(--light_blue);
+    transform: translateY(2px) translateX(2px);
+    color: var(--black);
+}
