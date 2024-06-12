@@ -25,32 +25,32 @@
     <!-- Header section -->
     <header id="header" class="header_wrapper">
         <!-- Main navigation -->
-        <nav>
-            <div>
+        <nav class="navigation_wrapper">
+            <div class="navigation_container">
                 <!-- Logo -->
                 <a href="./">
-                    <img width="60" src="assets/images/icons/scale_black.svg" alt="Logo Scale light">
-                    <img width="60" src="assets/images/icons/scale_white.svg" alt="Logo Scale dark">
+                    <img width="60" class="block dark:hidden" src="assets/images/icons/scale_black.svg" alt="Logo Scale light">
+                    <img width="60" class="hidden dark:block" src="assets/images/icons/scale_white.svg" alt="Logo Scale dark">
                 </a>
                 <!-- Navigation links -->
-                <div>
-                    <a href="./">Home</a>
-                    <a href="./customers.html">Customers</a>
-                    <a href="./about.html">About</a>
-                    <a href="./deal.html">Deal</a>
-                    <a href="sign-up.html">Sign up</a>
+                <div class="navigation_links_container">
+                    <a class="navigation_link active" href="./">Home</a>
+                    <a class="navigation_link" href="./customers.html">Customers</a>
+                    <a class="navigation_link" href="./about.html">About</a>
+                    <a class="navigation_link" href="./deal.html">Deal</a>
+                    <a class="navigation_link" href="sign-up.html">Sign up</a>
                 </div>
             </div>
             <!-- Icons for theme toggle and external links -->
-            <div>
-                <button aria-label="Toggle Dark Mode">
-                    <img width="20" height="20" src="assets/images/icons/moon.svg" alt="Moon">
-                    <img width="20" height="20" src="assets/images/icons/sun.svg" alt="Sun">
+            <div class="navigation_icons_container">
+                <button aria-label="Toggle Dark Mode" class="themeButton">
+                    <img width="20" height="20" class="block dark:hidden" src="assets/images/icons/moon.svg" alt="Moon">
+                    <img width="20" height="20" class="hidden dark:block" src="assets/images/icons/sun.svg" alt="Sun">
                 </button>
                 <a target="_blank" href="https://github.com/serhiipanovjs">
-                    <img width="20" height="20" src="assets/images/icons/github_black.svg"
+                    <img width="20" height="20" class="block dark:hidden" src="assets/images/icons/github_black.svg"
                          alt="Github light">
-                    <img width="20" height="20" src="assets/images/icons/github_white.svg"
+                    <img width="20" height="20" class="hidden dark:block" src="assets/images/icons/github_white.svg"
                          alt="Github dark">
                 </a>
             </div>
@@ -62,25 +62,25 @@
             </button>
         </nav>
         <!-- Mobile navigation -->
-        <nav id="mobileNavigation">
-            <div>
+        <nav id="mobileNavigation" class="navigation_wrapper_mobile hidden">
+            <div class="navigation_links_container mobile">
                 <!-- Mobile navigation links -->
-                <a href="./">Home</a>
-                <a href="./customers.html">Customers</a>
-                <a href="./about.html">About</a>
-                <a href="./deal.html">Deal</a>
-                <a href="sign-up.html">Sign up</a>
+                <a class="navigation_link active" href="./">Home</a>
+                <a class="navigation_link" href="./customers.html">Customers</a>
+                <a class="navigation_link" href="./about.html">About</a>
+                <a class="navigation_link" href="./deal.html">Deal</a>
+                <a class="navigation_link" href="sign-up.html">Sign up</a>
             </div>
             <!-- Mobile navigation icons -->
-            <div>
-                <button aria-label="Toggle Dark Mode">
-                    <img width="20" height="20" src="assets/images/icons/moon.svg" alt="Moon">
-                    <img width="20" height="20" src="assets/images/icons/sun.svg" alt="Sum">
+            <div class="navigation_icons_container mobile">
+                <button aria-label="Toggle Dark Mode" class="themeButton">
+                    <img width="20" height="20" class="block dark:hidden" src="assets/images/icons/moon.svg" alt="Moon">
+                    <img width="20" height="20" class="hidden dark:block" src="assets/images/icons/sun.svg" alt="Sum">
                 </button>
                 <a target="_blank" href="https://github.com/serhiipanovjs">
-                    <img width="20" height="20" src="assets/images/icons/github_black.svg"
+                    <img width="20" height="20" class="block dark:hidden" src="assets/images/icons/github_black.svg"
                          alt="Github light">
-                    <img width="20" height="20" src="assets/images/icons/github_white.svg"
+                    <img width="20" height="20" class="hidden dark:block" src="assets/images/icons/github_white.svg"
                          alt="Github dark">
                 </a>
             </div>
