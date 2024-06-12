@@ -99,4 +99,33 @@ button, a {
     display: block !important;
 }
 
+/* Remove default margins and paddings for paragraphs and spans */
+p, span {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set common styles for headings and strong text */
+main h1, main h2, main h3, main h4, main h5, main h6, main strong {
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Special style for specific h1 element */
+h1.special {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    letter-spacing: -.045rem;
+}
+
+/* Adjust special h1 style on larger screens */
+@media only screen and (min-width: 35em) {
+    h1.special {
+        font-size: 3rem;
+        line-height: 4rem;
+        letter-spacing: -.06rem;
+    }
+}
+
+
 /*DEFAULT STYLES - END*/
