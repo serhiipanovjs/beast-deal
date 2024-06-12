@@ -1,0 +1,232 @@
+/*HOME STYLES - START*/
+
+/* Styling for the glowing backdrop */
+.glowingBackdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/icons/hexagon-grid.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    opacity: .5;
+}
+
+/* Styling for the glowing effect after the backdrop */
+.glowingBackdrop:after {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    aspect-ratio: 1 / 1;
+    width: 300px;
+    border-radius: 100%;
+    background-color: var(--blood_red);
+    filter: blur(120px);
+    content: "";
+}
+
+/* Layout styles for the home layout */
+.layouts_homeLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+}
+
+/* Styles for the information section within the home layout */
+.layouts_homeLayout .home_information_section {
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Styles for the tagline within the information section */
+.layouts_homeLayout .home_information_section .information_section_tagline {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Styles for paragraphs within the tagline */
+.layouts_homeLayout .home_information_section .information_section_tagline p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+
+/* Styles for the main image section within the home layout */
+.layouts_homeLayout .home_main_image_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for the avatar container within the main image section */
+.layouts_homeLayout .home_main_image_section .avatar_container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    border-color: rgba(255, 87, 51, .3);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 100%;
+    overflow: hidden;
+    transform: rotateY(0deg);
+    animation-name: home_image_turn;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+/* Styles for the avatar image within the avatar container */
+.layouts_homeLayout .home_main_image_section .avatar_container .avatar_img {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation-duration: 32s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+/* Styles for different images within the avatar container */
+.layouts_homeLayout .home_main_image_section .avatar_container .first {
+    opacity: 1;
+    animation-name: home_image_1;
+}
+
+.layouts_homeLayout .home_main_image_section .avatar_container .second {
+    opacity: 0;
+    animation-name: home_image_2;
+}
+
+.layouts_homeLayout .home_main_image_section .avatar_container .third {
+    opacity: 0;
+    animation-name: home_image_3;
+}
+
+.layouts_homeLayout .home_main_image_section .avatar_container .fours {
+    opacity: 0;
+    animation-name: home_image_4;
+}
+
+/* Styles for the dark image within the avatar container */
+.layouts_homeLayout .home_main_image_section .avatar_container .dark_img {
+    visibility: hidden;
+}
+
+/* Styles for dark theme avatar images */
+.layouts_homeLayout .home_main_image_section .avatar_container:is([data-theme=dark] *) .avatar_img {
+    visibility: hidden;
+}
+
+/* Styles for dark theme dark images */
+.layouts_homeLayout .home_main_image_section .avatar_container:is([data-theme=dark] *) .dark_img {
+    visibility: visible;
+}
+
+/* Keyframes for rotating the main image */
+@keyframes home_image_turn {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(0deg);
+    }
+    75% {
+        transform: rotateY(90deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+/* Keyframes for transitioning between different images */
+@keyframes home_image_1 {
+    18.74% {
+        opacity: 1;
+    }
+    18.75% {
+        opacity: 0;
+    }
+    93.74% {
+        opacity: 0;
+    }
+    93.75% {
+        opacity: 1;
+    }
+}
+
+@keyframes home_image_2 {
+    18.74% {
+        opacity: 0;
+    }
+    18.75% {
+        opacity: 1;
+    }
+    43.74% {
+        opacity: 1;
+    }
+    43.75% {
+        opacity: 0;
+    }
+}
+
+@keyframes home_image_3 {
+    43.74% {
+        opacity: 0;
+    }
+    43.75% {
+        opacity: 1;
+    }
+    68.74% {
+        opacity: 1;
+    }
+    68.75% {
+        opacity: 0;
+    }
+}
+
+@keyframes home_image_4 {
+    68.74% {
+        opacity: 0;
+    }
+    68.75% {
+        opacity: 1;
+    }
+    93.74% {
+        opacity: 1;
+    }
+    93.75% {
+        opacity: 0;
+    }
+}
+
+/* Media query for adjusting layout on larger screens */
+@media only screen and (min-width: 60em) {
+    .layouts_homeLayout {
+        flex-direction: row;
+    }
+
+    .layouts_homeLayout .home_information_section {
+        width: 40%;
+    }
+
+    .layouts_homeLayout .home_main_image_section {
+        width: 60%;
+    }
+}
+
+/*HOME STYLES - END*/
