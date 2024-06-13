@@ -94,6 +94,8 @@
 }
 
 /* Styling for specific elements within modal content */
+.return_policy_modal_content span,
+.rules_and_conditions_modal_content span,
 .confirm_deal_modal_header span,
 .confirmDeal_modal_content span {
     font-weight: bold;
