@@ -88,6 +88,11 @@
     opacity: .3;
 }
 
+.primary_button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
 /* Styling for secondary button */
 .secondary_button {
     color: inherit;
