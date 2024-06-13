@@ -88,7 +88,72 @@
 
   <!-- Main content section -->
   <div class="layouts_centeredLayout">
-    Content
+    <!-- Main Content Area for the Deal -->
+    <main class="layouts_dealLayout">
+      <!-- Section for Deal Information -->
+      <div class="deal_information_section">
+        <!-- Main Title of the Page -->
+        <h1 class="special" id="dealPageTitle">Sign your contract!</h1>
+        <!-- Subheading with Description -->
+        <h2>Unlock the power to fulfill your greatest wishes with our unique contract. Fill out the form below to enter into a binding agreement that grants you the desires of your heart. Your destiny awaits!</h2>
+      </div>
+      <!-- Form Container for Deal Agreement -->
+      <form id="dealForm" class="dealForm_container">
+        <!-- Label and Input for First Name -->
+        <label>
+          First name:
+          <input
+              class="dealForm_text_input"
+              required
+              minlength="2"
+              name="first_name"
+              type="text"
+              placeholder="Your first name"
+          >
+        </label>
+        <!-- Label and Input for Last Name -->
+        <label>
+          Last name:
+          <input
+              class="dealForm_text_input"
+              required
+              minlength="2"
+              name="last_name"
+              type="text"
+              placeholder="Your last name"
+          >
+        </label>
+        <!-- Label and Dropdown for Selecting Executor -->
+        <label for="executor">
+          Select your executor:
+          <select name="executor" id="executor">
+            <option>mr. Beelzebub</option>
+            <option>mr. Lucifer</option>
+            <option>mrs. Lilith</option>
+            <option>mr. Mephistopheles</option>
+          </select>
+        </label>
+        <!-- Label and Textarea for Inputting Wish -->
+        <label for="deal_wish">
+          Your wish:
+          <textarea
+              placeholder="Type your wish here"
+              id="deal_wish"
+              class="dealForm_textareaElement"
+              name="deal_wish"
+              rows="8"
+              required
+              minlength="5"
+          ></textarea>
+        </label>
+        <br>
+        <!-- Checkbox for Agreement to Terms -->
+        <label><input required name="rules" type="checkbox">I agree to the terms and return policy</label>
+        <br>
+        <!-- Submit Button for Form -->
+        <button type="submit" aria-disabled="false" class="primary_button">Create the contract</button>
+      </form>
+    </main>
   </div>
 
   <!-- Footer section -->
