@@ -13,6 +13,17 @@ Join us at Beast Deal and let us turn your dreams into reality, one deal at a ti
 
 [Beast Deal Live Site](https://serhiipanovjs.github.io/beast-deal/)
 
+## Table of Contents
+
+- [Website Goals](#website-goals)
+- [User Experience](#user-experience)
+- [User Stories](#user-stories)
+- [Existing Features](#existing-features)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [My goals were to](#my-goals-were-to)
+- [Credits](#credits)
+
 ## Website Goals
 
 ### Business Goals
@@ -70,9 +81,9 @@ Join us at Beast Deal and let us turn your dreams into reality, one deal at a ti
 - The Eternal Seeker: Individuals who are perpetually dissatisfied or restless, constantly searching for something more
   in life.
 
-### User Stories
+## User Stories
 
-## New User:
+### New User:
 
 - Wish Fulfillment: Users will likely expect the site to deliver on its promise of fulfilling their deepest desires,
   whether they're material, emotional, or spiritual.
@@ -92,7 +103,7 @@ Join us at Beast Deal and let us turn your dreams into reality, one deal at a ti
   cultural backgrounds.
 - Ease of Use: A user-friendly interface that makes it easy for users to navigate the site, submit their wishes.
 
-## Returning User:
+### Returning User:
 
 - Access to Previously Agreed Upon Wishes: Returning users would expect access to the wishes they've already sold their
   souls for, ensuring that the terms of their agreements are upheld.
@@ -109,7 +120,7 @@ Join us at Beast Deal and let us turn your dreams into reality, one deal at a ti
   support from the site's administrators and staff, recognizing the gravity of their decisions and the complexities of
   their situations.
 
-## Site Administrator:
+### Site Administrator:
 
 - As a site administrator, the pages should be easily manageable
 - As a site administrator, the contact system should be able to sort general enquiries into categories to ensure that it
