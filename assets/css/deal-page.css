@@ -1,0 +1,65 @@
+/*DEAL PAGE STYLES - START*/
+
+/* Styling for the layout container of the deal page */
+.layouts_dealLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+
+/* Styling for headings within the deal information section */
+.deal_information_section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.deal_information_section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Styling for the container of the deal form */
+.layouts_dealLayout .dealForm_container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 30px;
+    border-color: rgba(255, 87, 51, .3);
+    border-width: 1px;
+    border-style: solid;
+    filter: drop-shadow(0.35rem 0.35rem 0.8rem rgba(255, 87, 51, 0.5));
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+/* Styling for labels within the deal form container */
+.layouts_dealLayout .dealForm_container label {
+    width: 100%;
+}
+
+/* Styling for text inputs within the deal form */
+.layouts_dealLayout .dealForm_container label .dealForm_text_input {
+    width: 100%;
+    font-size: 18px;
+    height: 30px;
+}
+
+/* Styling for textarea within the deal form */
+.layouts_dealLayout .dealForm_container label textarea {
+    width: 100%;
+    font-size: 18px;
+    resize: none;
+}
+
+/* Styling for selects within the deal form */
+.layouts_dealLayout .dealForm_container label select {
+    width: 100%;
+    height: 36px;
+}
+
+/*DEAL PAGE STYLES - END*/
