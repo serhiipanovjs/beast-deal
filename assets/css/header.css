@@ -78,7 +78,7 @@
 .header_wrapper .navigation_links_container .active {
     color: var(--blood_red);
     pointer-events: none;
-    font-weight: 900;
+    text-decoration: underline;
 }
 
 /* Styles for mobile navigation links container */
