@@ -22,7 +22,7 @@ Join us at Beast Deal and let us turn your dreams into reality, one deal at a ti
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [My goals were to](#my-goals-were-to)
-- [Credits](#credits)
+- [Credits](#acknowledgements)
 
 ## Website Goals
 
@@ -236,7 +236,13 @@ Meet our dedicated team of experts who work tirelessly to bring you the best dea
   transparency and clarity.
 - Return Policy Modal: Familiarize yourself with our return policy through an informative modal window.
 
-![deal_page_mockup](documentation/deal_page_mockup.png)
+#### Light theme:
+
+![deal_page_mockup](documentation/deal_page_mockup_light.png)
+
+#### Dark theme:
+
+![deal_page_mockup](documentation/deal_page_mockup_dark.png)
 
 #### Beast Deal Sign up
 
@@ -314,6 +320,12 @@ button below to discover our latest offers and promotions on our Deal page.
 | Filename  | Screenshot                                   | Notes                         |
 |-----------|----------------------------------------------|-------------------------------|
  style.css | ![Jigsaw.w3.org](documentation/cssvalid.png) | The style.css gave no errors. |
+ home-page.css | ![Jigsaw.w3.org](documentation/cssvalid.png) | The style.css gave no errors. |
+ customers-page.css | ![Jigsaw.w3.org](documentation/cssvalid.png) | The style.css gave no errors. |
+ about-page.css | ![Jigsaw.w3.org](documentation/cssvalid.png) | The style.css gave no errors. |
+ deal-page.css | ![Jigsaw.w3.org](documentation/cssvalid.png) | The style.css gave no errors. |
+ sign-up-and-404-pages.css | ![Jigsaw.w3.org](documentation/cssvalid.png) | The style.css gave no errors. |
+
 
 ### Lighthouse Testing
 
@@ -348,7 +360,7 @@ The live link can be found here - https://serhiipanovjs.github.io/beast-deal/
 - use ChatGPT for generating stories and another content.
 - use Stable Diffusion for creating amazing pictures and icons ether worked with AI learning.
 
-## Credits
+## Acknowledgements
 
 Our project wouldn't have been possible without the invaluable contributions from various sources:
 
